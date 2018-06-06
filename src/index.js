@@ -8,6 +8,9 @@ import TwoWayBinding from './EventsTwoWayBinding';
 import registerServiceWorker from './registerServiceWorker';
 import ReactList from './ReactList';
 import Pure from './Pure';
+import Login from './LoginFrom';
+import Search from './Search';
+import Parent from './Pure_components_example';
 
-ReactDOM.render(<Pure />, document.getElementById('root'));
+ReactDOM.render(<Parent />, document.getElementById('root'));
 registerServiceWorker();
