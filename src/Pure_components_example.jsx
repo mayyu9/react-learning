@@ -15,17 +15,17 @@ import React, { PureComponent } from 'react';
 class Parent extends React.Component{
   constructor(props){
     super(props);
-    this.state={text: Math.random()};
+    this.state={text: Math.random(), name: 'third'};
   }
   componentDidMount(){
-    setInterval(()=> this.setState({text: Math.random()}),1000);
+    setInterval(()=> this.setState({text: Math.random(), name:'third3'}),1000);
   }
   render(){
     return(
       <div>
       <FirstChild text = {this.state.text} />
       <SecondChild text = "this is MSD" />
-      <ThirdChild text = "this is MSD 2" />
+      <ThirdChild text = {this.state.name}/>
       </div>
     );
   };
@@ -33,7 +33,7 @@ class Parent extends React.Component{
 
 class FirstChild extends React.Component{
   render(){
-    ///console.log('First Child');
+    //console.log('First Child');
     return(
       <div>
       {this.props.text}
