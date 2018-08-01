@@ -13,6 +13,7 @@ import Search from './Search';
 // import Parent from './Pure_components_example';
 import P1 from './p1'
 import Parent from './eGovt/parent';
+import ParentUnmount from './Unmount/ParentUnmount';
 
-ReactDOM.render(<Parent />, document.getElementById('root'));
+ReactDOM.render(<ParentUnmount />, document.getElementById('root'));
 registerServiceWorker();
