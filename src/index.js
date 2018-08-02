@@ -14,6 +14,7 @@ import Search from './Search';
 import P1 from './p1'
 import Parent from './eGovt/parent';
 import ParentUnmount from './Unmount/ParentUnmount';
+import Clock2 from './Unmount/Clock2';
 
-ReactDOM.render(<ParentUnmount />, document.getElementById('root'));
+ReactDOM.render(<Clock2 />, document.getElementById('root'));
 registerServiceWorker();
